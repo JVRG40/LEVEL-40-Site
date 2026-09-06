@@ -15,15 +15,13 @@ export function Services() {
           Our Services
         </h2>
 
-        <ul className="mt-16 grid gap-12 md:grid-cols-2 md:gap-0 lg:grid-cols-4">
+        <ul className="mt-16 grid gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0">
           {services.map((item, index) => (
             <li
               key={item.title}
-              className={`md:px-8 md:py-2 ${
-                index > 0 ? "md:border-l md:border-line" : ""
-              } ${index === 0 ? "md:pl-0" : ""} ${
-                index === services.length - 1 ? "lg:pr-0" : ""
-              }`}
+              className={`lg:px-8 lg:py-2 ${
+                index > 0 ? "lg:border-l lg:border-line" : "lg:pl-0"
+              } ${index === services.length - 1 ? "lg:pr-0" : ""}`}
             >
               <h3 className="text-[12px] leading-relaxed tracking-[0.2em] text-foreground uppercase">
                 {item.title}
